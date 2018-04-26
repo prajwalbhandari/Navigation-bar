@@ -1,0 +1,94 @@
+html,body,nav,ul,li,a,span{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  font-family: helvetica;
+  font-size: 16px;
+}
+.navbar{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+.sticked{
+  display: flex;
+
+}
+.nav.reveal{
+  margin-top: 50px;
+  margin-left: -16px;
+  display:none;
+  flex-direction:column;
+  background-color: #004445;
+}
+.hidden.nav.reveal{
+  display: flex;
+}
+nav ul li ul li{
+    background-color: #267C73;
+}
+nav ul li{
+  list-style-type: none;
+  position: relative;
+  text-align: left;
+}
+nav ul li a{
+  text-decoration: none;
+  padding: 16px;
+  display: block;
+  color:white;
+}
+nav ul li a:hover{
+  background-color: grey;
+
+}
+.navbar{
+  background-color: #004445;
+  height:50px;
+  width: 100%;
+}
+.menu-anchor{
+  font-size: 24px;
+  text-align: center;
+  padding-bottom:10px;
+  color: White;
+
+}
+
+@media only screen and (min-width:480px){
+nav{
+}
+  .navbar{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50px;
+  }
+  .noth{
+    flex-grow: 1;
+  }
+  .nav.reveal{
+    margin: 0;
+    margin-right: 100px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+
+
+  }
+  .nav.reveal ul{
+    display: flex;
+
+  }
+  .nav.reveal ul li ul{
+    display: none;
+    position: absolute;
+  }
+  .nav.reveal ul li:hover ul{
+    display: block;
+  }
+  }
